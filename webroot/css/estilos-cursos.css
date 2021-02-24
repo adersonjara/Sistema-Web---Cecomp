@@ -1,0 +1,577 @@
+html{
+  font-size: 10px!important;
+}
+
+.banner{
+  z-index:0;
+  width: auto;
+  height: 120px;
+  margin-top: -8%;
+  margin-bottom: 0%;
+}
+@media(max-width:1200px){
+  .banner{
+    margin-top:-10%;
+  }
+}
+
+.navbar-brand {
+    padding:5px 0!important;
+}
+
+
+/*--  Tamaño del slider o carrusel     --*/
+.banner .carousel-inner{
+	margin:0;
+	height:750px;
+  width:100%;
+}
+
+/*--  Tamaño de la letra     --*/
+.banner .carousel-inner .item img{
+  height:750px;
+  width: 100%;
+  z-index:0;
+}
+
+/*--  Letras al centro     --*/
+.container .intro-text{
+  margin-top: -22%;
+  z-index: 1;
+  position: relative;
+}
+
+/*--  Responsive     --*/
+@media(max-width:400px){
+  .banner{
+    margin-top:-19%;
+    margin-right: -1%;
+    padding-right: 0;
+  }
+}
+
+@media(max-width:767px){
+  .banner .carousel-inner{
+  	height:550px;
+  }
+  .banner .carousel-inner .item img{
+    height:550px;
+  }
+}
+@media(max-width:380px){
+  .banner .carousel-inner{
+  	height:550px;
+  }
+
+  .container .intro-text{
+    margin-top: -40%;
+  }
+
+  .banner .carousel-inner .item img{
+    height:550px;
+  }
+}
+
+/* MENU */
+#mainNav ul li:hover a{
+  color:rgb(254,209,54)!important;
+}
+
+/*--  Logo de cecomp en header     --*/
+.navbar-brand img{
+  height:40px;
+}
+
+/* CARACTERISTICAS */
+#caracteristicas h4 span{
+  font-size: 1.3em!important;
+  color: #FFF;
+  background-color: rgb(254,209,54);
+  padding: 5px 9px;
+  border-radius: 20%;
+  margin-right: 10px;
+}
+
+
+/* SEPARADOR */
+.separador{
+  width: 100%;
+  height: 60px;
+  background-color: rgb(26, 25, 30);
+}
+
+/*--  FOOTER  --*/
+#pie{
+  height: auto!important;
+  background: url(../img/slider/slider01.png);
+  background-size: cover;
+  width: auto;
+  display:  inline-block;
+  position: relative;
+  width: 100%;
+  padding: 0;
+}
+
+.pie{
+  background-color: rgba(0, 0, 0, .75);
+  height: 100%;
+  padding: 150px 0 0 0;
+}
+
+.pie .title, .pie .ico{
+  color: #FFF;
+  font-size: 1.5em!important;
+  font-weight: bold!important;
+}
+
+.pie .title, .pie .content{
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.pie .content{
+  color: #FFF;
+  font-size: 1em!important;
+}
+
+.pie .color{
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: .9em!important;
+  color:white;
+}
+
+.pie .margen, .pie .pie-ico{
+  padding-top: 30px!important;
+}
+
+.pie ul.social-buttons li a{
+  color: #FFF;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 2.5em!important;
+}
+
+.pie ul.social-buttons li:hover a{
+  color: rgb(254,209,54);
+  background-color: rgba(255, 255, 255, 0);
+}
+
+@media(max-width:400px){
+  .pie .title, .pie .ico{
+    font-size: 1.3em!important;
+  }
+
+  .pie .content{
+    font-size: .8em!important;
+  }
+  .pie .color{
+    font-size: .7em!important;
+  }
+
+  .pie ul.social-buttons li a{
+    font-size: 1.8em!important;
+  }
+
+  .pie .text{
+    padding-bottom: 25px;
+  }
+}
+
+@media(max-width:769px){
+  .pie .text{
+    padding-bottom: 25px;
+  }
+}
+
+/*Info Modal*/
+.cursos {
+   text-align: center;
+   cursor: default;
+   width: 100%;
+   height: auto;
+}
+
+#services .container .col-md-4{
+  margin-bottom: 50px;
+}
+
+.modal-content .container .col-md-4{
+  margin-bottom: 30px;
+}
+
+.row{
+  margin-bottom: 50px;
+}
+.cursos .mask{
+  width: 100%;
+  height: 100%;
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+   opacity: 0;
+   background-color: rgba(255,255,255, .9);
+   transition: all 0.4s ease-in-out;
+}
+.cursos img {
+   display: block;
+   width: 100%;
+   height: 200px;
+   position: relative;
+}
+.cursos h4 {
+   text-transform: uppercase;
+   color: #fff;
+   text-align: center;
+   position: relative;
+   font-size: 17px;
+   padding: 10px;
+   background: rgba(154, 7, 7, 1);
+   margin: 20px 0 0 0;
+}
+.cursos p {
+   font-style: italic;
+   font-size: 14px;
+   color: #000;
+   text-align: center;
+   margin-top: 10px;
+}
+.cursos p span{
+   font-weight: bold;
+}
+.cursos a.info {
+   display: inline-block;
+   text-decoration: none;
+   padding: 0px 14px;
+   background: #b50b0b;
+   color: #fff;
+   text-transform: uppercase;
+   box-shadow: 0 0 1px #000;
+   border-radius: 5px;
+   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   font-weight: bold;
+}
+.cursos a.info:hover {
+   box-shadow: 0 0 5px #000;
+   background: #9a0707;
+}
+
+.mask {
+   filter: alpha(opacity=0);
+}
+.mask h4 {
+   transform: translateY(-100px);
+   filter: alpha(opacity=0);
+   opacity: 0;
+   transition: all 0.2s ease-in-out;
+}
+.mask p {
+   transform: translateY(100px);
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   transition: all 0.2s linear;
+}
+
+.mask a.info {
+   filter: alpha(opacity=0);
+   opacity: 0;
+   transition: all 0.2s ease-in-out;
+}
+
+.cursos:hover .mask {
+   filter: alpha(opacity=100);
+   opacity: 1;
+}
+.cursos:hover h4,
+.cursos:hover p,
+.cursos:hover a.info {
+   filter: alpha(opacity=100);
+   opacity: 1;
+   transform: translateY(0px);
+   transition-delay: .1s;
+}
+.cursos:hover h4 {
+   transition-delay: .2s;
+}
+
+
+/* Ubicanos */
+#contactanos{
+  overflow: hidden;
+  padding: 100px 0 0 0;
+}
+
+#contactanos .text-muted span{
+  font-weight: bold;
+}
+
+/* Anuncios */
+.contenedor, .contenedor{
+  width: 90%;
+  margin: 0 auto;
+}
+
+/*IMAGENES*/
+
+#modalidades .img-fluid, #modalidades .portfolio-hover{
+  border-radius: 100%;
+}
+
+#modalidades .img-fluid, #modalidades .portfolio-hover, #modalidades .mod-cont{
+  height: 300px;
+  width: 300px;
+}
+
+#modalidades .mod-cont{
+  justify-content: center;
+}
+
+
+#nosotros .rounded-circle {
+    width: 101%;
+    height: 101%;
+    border-radius: 50%!important;
+}
+
+#nosotros .rounded-circle .img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+@media(max-width:991px){
+  #modalidades .img-fluid, #modalidades .portfolio-hover, #modalidades .mod-cont{
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media(max-width:575px){
+  #modalidades .img-fluid, #modalidades .portfolio-hover, #modalidades .mod-cont{
+    height: 300px;
+    width: 300px;
+  }
+}
+
+
+/**********NOSOTROS****************/
+.cuerpo_nosotros{
+  display: inline-block;
+  position: relative;
+  margin-top: 10%;
+}
+
+/* Social Bar */
+.social {
+	position: fixed;
+	left: 0;
+	top: 35%;
+	z-index: 1000;
+}
+
+.social .dato{
+  color: #FFF;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: .8em;
+  display: none;
+}
+
+	.social ul {
+		list-style: none;
+    padding: 0;
+	}
+
+	.social ul li a, .social ul li label {
+		display: inline-block;
+		color:#fff;
+		background: #000;
+    width: 35px;
+    padding: 10px 0;
+    text-align: center;
+		text-decoration: none;
+	}
+
+  .social ul li label{
+    cursor: pointer;
+    padding: 10px 10px;
+  }
+
+	.social ul li .fa-facebook {background:#3b5998;}
+	.social ul li .fa-twitter {background: #00abf0;}
+	.social ul li .fa-google-plus {background: #d95232;}
+	.social ul li .fa-pinterest {background: #ae181f;}
+	.social ul li .fa-whatsapp {background: #0dc143;}
+
+	.social ul li a:hover {
+		width: 45px;
+	}
+
+  .social ul li:hover label{
+    width: auto;
+  }
+
+  .social ul li:hover .dato{
+    display: inline-block;
+  }
+
+
+  /**************DETALLE_CURSO***********************/
+  .cabecera-cursos{
+    background: #ae181f!important;
+    height: 50px;
+  }
+  .cabcera-cursos nav{
+      margin-right: 15%;
+  }
+
+  .estructura_cursos{
+    background: url("../img/modalidades/presencial.jpg");
+    background-size: cover;
+    width: 100%;
+    margin-top: 70px;
+    display: inline-block;
+    position: relative;
+  }
+
+  .estructura_cursos .fondo-blanco{
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius:1%;
+    margin-bottom: 2%;
+  }
+
+  .container .titulo2-container{
+    background-color: rgb(211, 53, 53);
+    width: 100%;
+    box-shadow: 0 0 15px black;
+  }
+   .container .titulo2{
+    text-align: center;
+    color:white;
+    font-weight: bold;
+    font-size: 200%;
+  }
+
+  .container .fondo-contenedor{
+    width:100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    text-align:center;
+    box-shadow: 0 0 15px black;
+  }
+
+   .container .fondo-contenedor .flotante{
+    display: inline-block;
+    position: relative;
+    text-align:left;
+    margin-top:5%;
+    color:black;
+    text-shadow: 0 0 50px black;
+  }
+   .container .fondo-contenedor img{
+    margin-top:10%;
+    margin-bottom: 10%;
+    height:200px;
+    width:300px;
+    float: right;
+    margin-left: 1000%!important;
+    border-radius:2%;
+
+  }
+  .
+  .flotante h4 {
+    font-size: 110%!important;
+    line-height: 120%;
+
+  }
+  .flotante tc{
+    font-size: 150%!important;
+    color:#dc3545;
+    text-shadow: 0 0 50px black;
+  }
+
+  /*Paginacion*/
+  .pagination .page-item .page-link{
+    color: rgb(174, 7, 7)!important;
+  }
+
+
+/*@media(min-width:320px){
+	.estructura_cursos .fondo-blanco{
+		margin-top:20%;
+	}
+}
+
+@media(min-width:400px){
+	.estructura_cursos .fondo-blanco{
+		margin-top:12%;
+	}
+}
+
+@media(min-width:600px){
+	.estructura_cursos .fondo-blanco{
+		margin-top:6%;
+	}
+}
+
+@media(min-width:1025px){
+	.estructura_cursos .fondo-blanco{
+		margin-top:0;
+	}
+}*/
+
+/* Tamaño de Títulos */
+
+
+@media  (max-width : 500px){
+  section h2.section-heading{
+    font-size: 30px;
+  }
+
+  .portfolio-modal .modal-content h2{
+    font-size: 2.5em;
+  }
+}
+
+@media  (max-width : 400px){
+  .portfolio-modal .modal-content h2{
+    font-size: 2em;
+    padding-top: 15px;
+  }
+}
+
+/*CURSOS*/
+@media  (max-width : 767px){
+  .modal .cursos{
+    margin-bottom: 20px;
+  }
+}
+
+/*pag-Cursos*/
+
+.estructura_cursos .logocecomp img {
+    margin-left: 0%;
+}
+
+.panel-warning>.panel-heading {
+    color: #8a6d3b;
+    background-color: #b51f1f;
+    border-color: #b51f1f;
+}
+
+.panel-title{
+  color: #FFF;
+  font-weight: bold;
+}
+
+.fondo-contenedor h4{
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px){
+
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+/*BOTON MENU*/
+.navbar {
+    padding: .5rem 5rem .5rem 1rem;
+}
